@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+    
+    #canvas {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: x-large;
+        color: grey;
+        text-align: center;
+        margin: 0 auto;
+        min-width: 50%;
+        max-width: 70%;
+        shape-outside: circle(50%);
+    }
+    
+    span {
+        display: inline-block;
+    }
+
+    .active {
+        font-weight: bold;
+        color: black !important;
+    }
+
+    .size0 {
+        color: #d1d1d1;
+        font-size: medium;
+    }
+
+    .size1 {
+        color: #a0a0a0;
+        font-size: large;
+    }
+
+    .size2 {
+        color: #bcbcbc;
+        font-size: x-large;
+    }
+    .size3 {
+        color: #d8d8d8;
+        font-size: xx-large;
+    }
+
+    #highlight {
+        z-index: 4000;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: xx-large;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 35%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <script src="js/index.js"></script>
+    <div id="highlight"></div>
+    <div id="canvas">
+    </div>
+</body>
+</html>
