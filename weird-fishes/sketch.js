@@ -84,6 +84,12 @@ function mousePressed() {
 
 function draw() {
   background(0);
+  if (thingies.length === 0) {
+    stroke(255);
+    fill(255);
+    textSize(36);
+    text('Click to generate a weird fish', 30, 100);
+  }
   for(let i = 0; i < thingies.length; i++) {
     thingies[i].show();
   }
